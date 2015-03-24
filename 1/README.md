@@ -18,7 +18,7 @@
     GND ----- GND<br>
     A5  ----- SCL<br>
     A4  ----- SDA
- ![image](https://github.com/qzane/eta/blob/master/1/pic/P50324-140006)
+ ![image](https://github.com/qzane/eta/blob/master/1/pic/P50324-140006.jpg)
  
 ### 3.程序下载与调试
 * 将arduino与电脑连接
