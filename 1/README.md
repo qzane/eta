@@ -1,0 +1,21 @@
+# 利用arduino与BMP085传感器获取温度与气压数据并上传到电脑上
+### 0. 准备材料
+* arduino一台(Uno 或者 Nano)
+* BMP085传感器一块
+* 一些连接线
+
+### 1.焊接传感器上的接口
+
+### 2.将传感器与arduino连接起来
+* 确定arduino串口通讯使用的引脚(A4与A5)
+* 连接方法如下<br>
+    arduino   BMP085
+    5V  ----- VIN<br>
+    GND ----- GND<br>
+    A5  ----- SCL<br>
+    A4  ----- SDA<br>
+### 3.程序下载与调试
+* 将arduino与电脑连接
+* 打开bmp180.ino文件
+* 烧录程序
+* 使用Serial Monitor测试运行情况
