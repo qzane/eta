@@ -1,8 +1,47 @@
+﻿#coding:utf-8
 import serial
+import serial.tools.list_ports as ports
+#ports.main()
+''' python
+inWaiting()
+Return the number of chars in the receive buffer.
+flush()
+Flush of file like objects. In this case, wait until all data is written.
+flushInput()
+Flush input buffer, discarding all it’s contents.
+flushOutput()
+Clear output buffer, aborting the current output and discarding all that is in the buffer.
+'''
+''' C
+available()
+
+Description
+
+Get the number of bytes (characters) available for reading from the serial port. This is data that's already arrived and stored in the serial receive buffer (which holds 64 bytes). available() inherits from the Stream utility class. 
+
+millis()
+
+Description
+
+Returns the number of milliseconds since the Arduino board began running the current program. This number will overflow (go back to zero), after approximately 50 days. 
+
+micros()
+
+Description
+
+Returns the number of microseconds since the Arduino board began running the current program. This number will overflow (go back to zero), after approximately 70 minutes. On 16 MHz Arduino boards (e.g. Duemilanove and Nano), this function has a resolution of four microseconds (i.e. the value returned is always a multiple of four). On 8 MHz Arduino boards (e.g. the LilyPad), this function has a resolution of eight microseconds. 
+
+
+Note: there are 1,000 microseconds in a millisecond and 1,000,000 microseconds in a second. 
+Returns
+
+Number of microseconds since the program started (unsigned long) 
+
+
+'''
 import re
 import urllib2
 import time
-
 global ser
 ser = None
 def init():
