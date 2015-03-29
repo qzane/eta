@@ -42,12 +42,26 @@ void setTime(){
       RTC.convertTemperature();             //convert current temperature into registers
       Serial.print(RTC.getTemperature()); //read registers and display the temperature
       Serial.println("deg C");
+}
+void putTime(){
+      date = RTC.now();
+      Serial.println(date.year());
+      Serial.println(date.month());
+      Serial.println(date.date());
+      Serial.println(date.hour());
+      Serial.println(date.minute());
+      Serial.println(date.second());   
+      
+      RTC.convertTemperature();             //convert current temperature into registers
+      Serial.print(RTC.getTemperature()); //read registers and display the temperature
+      Serial.println("deg C");
       float t,p;
       bmp.read(t,p);
       Serial.println(t);
       Serial.println(p);
+  
+  
 }
-
 void loop () 
 {
   if ((micros()- serialTime) > 1000000 && Serial.available() > 0){
@@ -57,6 +71,9 @@ void loop ()
       // set time signal
       setTime();
     }//end mood 101
+    if (mood == 103){
+       putTime(); 
+    }
     
     serialTime = micros();
   }//end listening to Serial Port;
