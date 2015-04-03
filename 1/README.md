@@ -1,18 +1,18 @@
-# ÀûÓÃarduinoÓëBMP180´«¸ĞÆ÷»ñÈ¡ÎÂ¶ÈÓëÆøÑ¹Êı¾İ²¢ÉÏ´«µ½µçÄÔÉÏ
-### 0. ×¼±¸²ÄÁÏ
-* arduinoÒ»Ì¨(Uno »òÕß Nano)
-* BMP180´«¸ĞÆ÷Ò»¿é
-* Ò»Ğ©Á¬½ÓÏß
+ï»¿# åˆ©ç”¨arduinoä¸BMP180ä¼ æ„Ÿå™¨è·å–æ¸©åº¦ä¸æ°”å‹æ•°æ®å¹¶ä¸Šä¼ åˆ°ç”µè„‘ä¸Š
+### 0. å‡†å¤‡ææ–™
+* arduinoä¸€å°(Uno æˆ–è€… Nano)
+* BMP180ä¼ æ„Ÿå™¨ä¸€å—
+* ä¸€äº›è¿æ¥çº¿
  ![image](https://github.com/qzane/eta/blob/master/1/pic/BMP180.jpg "BMP180")
  
-### 1.º¸½Ó´«¸ĞÆ÷ÉÏµÄ½Ó¿Ú
+### 1.ç„Šæ¥ä¼ æ„Ÿå™¨ä¸Šçš„æ¥å£
  ![image](https://github.com/qzane/eta/blob/master/1/pic/P50324-124204.jpg)
  
-### 2.½«´«¸ĞÆ÷ÓëarduinoÁ¬½ÓÆğÀ´
-* È·¶¨arduino´®¿ÚÍ¨Ñ¶Ê¹ÓÃµÄÒı½Å(A4ÓëA5)
+### 2.å°†ä¼ æ„Ÿå™¨ä¸arduinoè¿æ¥èµ·æ¥
+* ç¡®å®šarduinoä¸²å£é€šè®¯ä½¿ç”¨çš„å¼•è„š(A4ä¸A5)
  ![image](https://github.com/qzane/eta/blob/master/1/pic/p1.png)
  
-* Á¬½Ó·½·¨ÈçÏÂ<br>
+* è¿æ¥æ–¹æ³•å¦‚ä¸‹<br>
     arduino   BMP180
     5V  ----- VIN<br>
     GND ----- GND<br>
@@ -20,15 +20,15 @@
     A4  ----- SDA
  ![image](https://github.com/qzane/eta/blob/master/1/pic/P50324-181950.jpg)
  
-### 3.³ÌĞòÏÂÔØÓëµ÷ÊÔ
-* ½«arduinoÓëµçÄÔÁ¬½Ó
-* ´ò¿ªbmp180.inoÎÄ¼ş
+### 3.ç¨‹åºä¸‹è½½ä¸è°ƒè¯•
+* å°†arduinoä¸ç”µè„‘è¿æ¥
+* æ‰“å¼€bmp180.inoæ–‡ä»¶
  ![image](https://github.com/qzane/eta/blob/master/1/pic/p1.png)
  
-* ÉÕÂ¼³ÌĞò
+* çƒ§å½•ç¨‹åº
  ![image](https://github.com/qzane/eta/blob/master/1/pic/p3.png)
  
-* Ê¹ÓÃSerial Monitor²âÊÔÔËĞĞÇé¿ö
+* ä½¿ç”¨Serial Monitoræµ‹è¯•è¿è¡Œæƒ…å†µ
  ![image](https://github.com/qzane/eta/blob/master/1/pic/p4.png)
  ![image](https://github.com/qzane/eta/blob/master/1/pic/p5.png)
  

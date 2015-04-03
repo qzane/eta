@@ -1,6 +1,8 @@
 #include <Wire.h>
 #include "DS3231.h"
 #include "BMP180.h"
+#include "dht11.h"
+dht11 DHT11;
 DS3231 RTC; //Create the DS3231 object
 BMP180 bmp;
 char weekDay[][4] = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
@@ -59,8 +61,40 @@ void putTime(){
       bmp.read(t,p);
       Serial.println(t);
       Serial.println(p);
-  
-  
+      readHumidity();
+}
+void readHumidity(){
+ int chk = DHT11.read(2);
+
+  Serial.print("Read sensor: ");
+  switch (chk)
+  {
+    case DHTLIB_OK: 
+                Serial.println("OK"); 
+                break;
+    case DHTLIB_ERROR_CHECKSUM: 
+                Serial.println("Checksum error"); 
+                break;
+    case DHTLIB_ERROR_TIMEOUT: 
+                Serial.println("Time out error"); 
+                break;
+    default: 
+                Serial.println("Unknown error"); 
+                break;
+  }
+
+  Serial.print("Humidity (%): ");
+  Serial.println((float)DHT11.humidity, 2);
+
+  Serial.print("Temperature (oC): ");
+  Serial.println((float)DHT11.temperature, 2);
+
+/*
+  Serial.print("Dew Point (oC): ");
+  Serial.println(dewPoint(DHT11.temperature, DHT11.humidity));
+
+  Serial.print("Dew PointFast (oC): ");
+  Serial.println(dewPointFast(DHT11.temperature, DHT11.humidity)); */
 }
 void loop () 
 {
