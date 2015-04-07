@@ -14,3 +14,7 @@
 ### * 睡眠监视器
 1. 把加速度传感器做成手表形状从而记录睡眠状态
 2. 加入闹钟功能，通过震动唤醒
+
+### 连接
+1. [arduino.cc](http://www.arduino.cc)
+2. [ USB转串口CH341/CH340的WINDOWS驱动程序安装包](http://wch.cn/download/CH341SER_EXE.html)
