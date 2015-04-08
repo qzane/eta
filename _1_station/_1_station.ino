@@ -28,7 +28,7 @@ void setup ()
     Serial.println("Ready!");
     Serial.print(RTC.getTemperature()); //read registers and display the temperature
     Serial.println("deg C");
-    //record();
+    record();
     recordTime = micros();
     
 }
@@ -71,7 +71,6 @@ void putTime(){
       readHumidity();
 }
 void readHumidity(){
-  return ;
  int chk = DHT11.read(2);
 
   Serial.print("Read sensor: ");
