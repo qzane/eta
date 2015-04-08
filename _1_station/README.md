@@ -14,8 +14,8 @@ VCC DATA NC GND<br>
 
 
 
-请把代码打包下载，使用_1_station 文件夹里的版本<br>
-上位机软件是这个 [点我下载](https://github.com/qzane/eta/blob/master/_1_station/mktime.exe?raw=true)
+请把代码[打包下载](https://github.com/qzane/eta/archive/master.zip)，使用_1_station 文件夹里的版本<br>
+上位机软件是这个(上面那个目录里面就有)或者 [点我下载](https://github.com/qzane/eta/blob/master/_1_station/mktime.exe?raw=true)
 
 以上的东西我会继续完善，有什么问题可以问我
 
