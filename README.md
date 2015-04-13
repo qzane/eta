@@ -18,3 +18,5 @@
 ### 连接
 1. [arduino.cc](http://www.arduino.cc)
 2. [ USB转串口CH341/CH340的WINDOWS驱动程序安装包](http://wch.cn/download/CH341SER_EXE.html)
+3. [pyserial (可选)](https://pypi.python.org/pypi/pyserial/)
+4. [matplotlib (可选)](https://pypi.python.org/pypi/matplotlib/1.4.3)
