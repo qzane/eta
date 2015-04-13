@@ -2,5 +2,6 @@
 *.exe
 *.o
 *.csv
+*.png
 ./py2exe/build/*
 ./py2exe/dist/*

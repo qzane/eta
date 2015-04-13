@@ -8,7 +8,7 @@ sys.argv.append("py2exe")
 options = {"py2exe":{ "bundle_files": 1,"includes":includes }}  
             
           
-setup(#options = options,   
+setup(options = options,   
       zipfile=None,    
       console = [{"script":'mktime.py'}])  
       

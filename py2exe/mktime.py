@@ -158,6 +158,7 @@ if __name__ == '__main__':
                 print '大概需要20秒钟，请稍后...'.decode('utf-8')
                 saveData()
                 print "读取成功！数据保存在data.csv文件里，可以用excel打开，每行的数据分别是 时间,温度,气压,湿度".decode('utf-8')
+                setTime()
             elif mood == 4:
                 break
             else:
