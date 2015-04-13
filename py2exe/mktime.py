@@ -120,7 +120,28 @@ def getData():
     
     return (data)#,q)
     
+def saveData():
+    q = set(getData())
     
+    try:
+        with open('data.csv','w') as f:
+            while(1):
+                tmp = f.readline()
+                if tmp == '':
+                    break
+                tmp = tmp.split(',')
+                tmp = (int(tmp[0]),float(tmp[1]),float(tmp[2]),int(tmp[3]))
+                q.add(tmp)
+    except:
+        pass
+        
+    q = list(q)
+    q.sort(key=lambda x:x[0])
+    
+    with open('data.csv','w') as f:
+        for i in q:
+            f.write('%d,%f,%f,%d\n'%i)
+        f.flush()
     
     
 if __name__ == '__main__':
@@ -134,12 +155,8 @@ if __name__ == '__main__':
             elif mood == 2:
                 readData()
             elif mood == 3:
-                print '大概需要10秒钟，请稍后...'.decode('utf-8')
-                q = getData()
-                with open('data.csv','a') as f:
-                    for i in q:
-                        f.write('%d,%f,%f,%d\n'%i)
-                    f.flush()
+                print '大概需要20秒钟，请稍后...'.decode('utf-8')
+                saveData()
                 print "读取成功！数据保存在data.csv文件里，可以用excel打开，每行的数据分别是 时间,温度,气压,湿度".decode('utf-8')
             elif mood == 4:
                 break
