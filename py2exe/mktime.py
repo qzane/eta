@@ -143,7 +143,7 @@ def saveData():
             f.write('%d,%f,%f,%d\n'%i)
         f.flush()
     
-    
+
 if __name__ == '__main__':
     while(1):
         try:
@@ -159,6 +159,8 @@ if __name__ == '__main__':
                 saveData()
                 print "读取成功！数据保存在data.csv文件里，可以用excel打开，每行的数据分别是 时间,温度,气压,湿度".decode('utf-8')
                 setTime()
+            elif mood == 5:
+                print '确定要擦除所有数据吗？(yes/no)'
             elif mood == 4:
                 break
             else:

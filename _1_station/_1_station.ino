@@ -26,7 +26,7 @@ void setup ()
     serialTime = 0;
     RTC.convertTemperature();             //convert current temperature into registers
     Serial.println("Ready!");
-    Serial.print(RTC.getTemperature()); //read registers and display the temperature
+    //Serial.print(RTC.getTemperature()); //read registers and display the temperature
     Serial.println("deg C");
     record();
     recordTime = micros();
@@ -65,7 +65,7 @@ void putTime(){
       Serial.print(RTC.getTemperature()); //read registers and display the temperature
       Serial.println("deg C");
       float t,p;
-      //bmp.read(t,p);
+      bmp.read(t,p);
       Serial.println(t);
       Serial.println(p);
       readHumidity();
@@ -125,7 +125,7 @@ void record(){
   *(long*)buff = (long)(date.get()+946656000);
   *((short*)buff+2) =  (short)(RTC.getTemperature()*100);
   float t,p;
-  //bmp.read(t,p);
+  bmp.read(t,p);
   *((short*)buff+3) = (short)(p/10);
   DHT11.read(2);
   *((char*)buff+8) = (char)(DHT11.humidity);

@@ -5,6 +5,11 @@
 2. [利用arduino与DS3231制作高精度实时时钟](https://github.com/qzane/eta/tree/master/_2_DS3231 "点击访问")
 3. [在上面两次活动的基础上将温度、气压与时间记录在AT24C32中，搭建可以独立采集气温气压变化的“气象站”](https://github.com/qzane/eta/tree/master/_3_station)
 
+### * 熟悉arduino基本功能
+1. [电脑控制亮灯实验](https://github.com/qzane/eta/blob/master/basic/BlinkX/BlinkX.ino "点击查看代码") 
+2. 按钮实验
+3. 模拟信号输入实验
+
 ### * 手柄
 1. 使用加速度模块实现游戏手柄的功能
 
